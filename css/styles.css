@@ -135,7 +135,7 @@ h6 {
 
 .accordion__header {
   background-color: #f6f6f6;
-  padding: 20px 40px 20px 30px;
+  padding: 20px 50px 20px 30px;
   border-radius: 8px;
   width: 100%;
   font-size: 20px;
@@ -181,6 +181,10 @@ h6 {
 .accordion--active .accordion__header::after {
   transform: rotate(0deg);
   transition: 0.4s linear;
+}
+
+.body-freeze-scroll {
+  overflow: hidden;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!! */
@@ -544,6 +548,9 @@ h6 {
 .contacts__email {
   font-size: 20px;
   font-weight: 700;
+}
+
+.contacts__body-contacts {
   margin-bottom: 50px;
 }
 
@@ -682,6 +689,7 @@ h6 {
     background-color: rgba(30, 29, 36, 0.9);
     padding: 100px 20px;
     transition: 0.4s linear;
+    overflow-y: auto;
   }
 
   .header__list {
@@ -754,6 +762,26 @@ h6 {
 
   .contacts__content {
     flex-direction: column;
+  }
+
+  .contacts__body-contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .contacts__body-contacts > div {
+    margin-right: 50px;
+  }
+
+  .contacts__body-contacts > div:last-child {
+    margin-right: 0;
+  }
+
+  .contacts__phone {
+    margin: 0;
   }
 
   .contacts__contacts {
@@ -897,6 +925,10 @@ h6 {
   .contacts__item {
     width: 40px;
     height: 40px;
+  }
+
+  .contacts__head {
+    font-size: 20px;
   }
 
   .contacts__item img {

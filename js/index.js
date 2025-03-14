@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (target) {
 
                         document.querySelector('.header').classList.remove('header__burger--active');
+                        document.body.classList.remove('body-freeze-scroll');
 
                         const y = document.getElementById(`${target}`).offsetTop;
 
@@ -179,6 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const burger = document.querySelector('.header__burger');
         burger.addEventListener('click', function () {
             this.closest('.header').classList.toggle('header__burger--active');
+            document.body.classList.toggle('body-freeze-scroll');
         });
     })();
 
