@@ -184,4 +184,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     })();
 
+    (function () {
+        const allAnimationSections = document.querySelectorAll('.animation');
+
+        if (allAnimationSections.length) {
+
+            allAnimationSections[0].classList.add('animation--active');
+
+            let isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+            if ((!isMobile && window.innerHeight <= 768) || (isMobile && window.innerWidth <= 768)) {
+
+                document.addEventListener('scroll', () => {
+                    allAnimationSections.forEach((item, _) => {
+
+                        if (!item.classList.contains('animation--active') && window.pageYOffset >= (item.offsetTop - (document.querySelector('header').getBoundingClientRect().height * 4))) {
+                            item.classList.add('animation--active');
+                        }
+
+                    });
+                });
+            } else {
+                allAnimationSections.forEach((item, _) => {
+                    item.classList.add('animation--active');
+                });
+            }
+        }
+
+    })();
+
 });

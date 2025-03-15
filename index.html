@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/styles.css" />
-  <title>Document</title>
+  <link rel="icon" href="./images/logoIcon.svg" />
+  <title>Canopy</title>
 </head>
 
 <body>
@@ -28,16 +29,16 @@
               <a switch="about-us">Про нас</a>
             </li>
             <li class="header__item"><a switch="project">Проекти</a></li>
-            <li class="header__item"><a switch="contacts">Контакти</a></li>
             <li class="header__item">
               <a switch="oftenQuestion">Часті питання</a>
             </li>
+            <li class="header__item"><a switch="contacts">Контакти</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="page">
-      <section id="main" class="welcome">
+      <section id="main" class="welcome animation">
         <div class="swiper welcome__swiper">
           <div class="welcome__wrapper swiper-wrapper">
             <div class="swiper-slide welcome__swiper-slide">
@@ -74,7 +75,7 @@
           </div>
         </div>
       </section>
-      <section id="about-us" class="about-us">
+      <section id="about-us" class="about-us animation">
         <div class="container">
           <h2 class="about-us__title title">Про нас</h2>
           <div class="about-us__body">
@@ -110,7 +111,7 @@
           </div>
         </div>
       </section>
-      <section id="project" class="project">
+      <section id="project" class="project animation">
         <div class="container">
           <h2 class="project__title title">Проекти</h2>
           <div class="project__swiper swiper">
@@ -167,7 +168,7 @@
           </div>
         </div>
       </section>
-      <section id="oftenQuestion" class="question">
+      <section id="oftenQuestion" class="question animation">
         <div class="container">
           <h2 class="question__title title">Часті питання</h2>
           <div class="question__content">
@@ -256,62 +257,62 @@
           </div>
         </div>
       </section>
-      <section id="contacts" class="contacts">
-        <div class="container">
-          <h2 class="contacts__title title">Контакти</h2>
-          <div class="contacts__content">
-            <div class="contacts__contacts">
-              <div class="contacts__body-contacts">
-                <div>
-                  <h3 class="contacts__head">Номер телефона:</h3>
-                  <a class="contacts__phone">+380 958 549 550</a>
-                </div>
-                <div>
-                  <h3 class="contacts__head">E-mail:</h3>
-                  <p class="contacts__email">andriiivanchov@gmail.com</p>
-                </div>
-              </div>
-              <h3 class="contacts__head">Соц мережі:</h3>
-              <ul class="contacts__list">
-                <li class="contacts__item network">
-                  <a href=""><img src="./images/instagram.svg" alt="" /></a>
-                </li>
-                <li class="contacts__item network">
-                  <a href=""><img src="./images/telegram.svg" alt="" /></a>
-                </li>
-                <li class="contacts__item network">
-                  <a href=""><img src="./images/viber.svg" alt="" /></a>
-                </li>
-              </ul>
-            </div>
-            <form action="https://api.web3forms.com/submit" method="POST" class="contacts__form">
-              <input type="hidden" name="access_key" value="6c0d1fce-f462-4aea-9f0a-c7c182821043" />
-              <div class="contacts__form-wrapper">
-                <h2 class="contacts__form-title">
-                  Пишіть нам із будь-якими запитаннями чи запитами або
-                  використовуйте наші контактні дані.
-                </h2>
-                <div class="contacts__form-body">
-                  <input type="text" placeholder="Ім'я" name="name" class="contacts__form-input contacts__form-field" />
-                  <input type="email" name="email" placeholder="E-mail"
-                    class="contacts__form-input contacts__form-field" />
-                  <input type="tel" placeholder="Телефон" name="phone"
-                    class="contacts__form-input contacts__form-field" />
-                </div>
-                <textarea placeholder="Повідомлення" class="contacts__form-textarea contacts__form-field"
-                  name="message"></textarea>
-                <button type="button" class="contacts__form-button-send contacts__form-button">
-                  Відправити
-                </button>
-                <button type="reset" class="contacts__form-button-reset contacts__form-button">
-                  Очистити
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
     </main>
+    <footer id="contacts" class="contacts animation">
+      <div class="container">
+        <h2 class="contacts__title title">Контакти</h2>
+        <div class="contacts__content">
+          <div class="contacts__contacts">
+            <div class="contacts__body-contacts">
+              <div>
+                <h3 class="contacts__head">Номер телефона:</h3>
+                <a class="contacts__phone">+380 958 549 550</a>
+              </div>
+              <div>
+                <h3 class="contacts__head">E-mail:</h3>
+                <p class="contacts__email">andriiivanchov@gmail.com</p>
+              </div>
+            </div>
+            <h3 class="contacts__head">Соц мережі:</h3>
+            <ul class="contacts__list">
+              <li class="contacts__item network">
+                <a href=""><img src="./images/instagram.svg" alt="" /></a>
+              </li>
+              <li class="contacts__item network">
+                <a href=""><img src="./images/telegram.svg" alt="" /></a>
+              </li>
+              <li class="contacts__item network">
+                <a href=""><img src="./images/viber.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+          <form action="https://api.web3forms.com/submit" method="POST" class="contacts__form">
+            <input type="hidden" name="access_key" value="6c0d1fce-f462-4aea-9f0a-c7c182821043" />
+            <div class="contacts__form-wrapper">
+              <h2 class="contacts__form-title">
+                Пишіть нам із будь-якими запитаннями чи запитами або
+                використовуйте наші контактні дані.
+              </h2>
+              <div class="contacts__form-body">
+                <input type="text" placeholder="Ім'я" name="name" class="contacts__form-input contacts__form-field" />
+                <input type="email" name="email" placeholder="E-mail"
+                  class="contacts__form-input contacts__form-field" />
+                <input type="tel" placeholder="Телефон" name="phone"
+                  class="contacts__form-input contacts__form-field" />
+              </div>
+              <textarea placeholder="Повідомлення" class="contacts__form-textarea contacts__form-field"
+                name="message"></textarea>
+              <button type="button" class="contacts__form-button-send contacts__form-button">
+                Відправити
+              </button>
+              <button type="reset" class="contacts__form-button-reset contacts__form-button">
+                Очистити
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
   </div>
   <script src="./js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
