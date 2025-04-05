@@ -203,6 +203,11 @@ h6 {
   transition: 0.3s linear;
 }
 
+.disabled-network {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 /* !!!!!!!!!!!!!!!!!!!!!! */
 
 .header {

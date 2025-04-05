@@ -183,6 +183,8 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.classList.toggle('body-freeze-scroll');
         });
     })();
+    debugger;
+    console.log({ name: 'andrii', age: 18 });
 
     (function () {
         const allAnimationSections = document.querySelectorAll('.animation');
